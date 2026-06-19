@@ -1,0 +1,38 @@
+{
+  "name": "cortex-plugin-treasury",
+  "version": "1.0.0",
+  "description": "Multi-Currency Treasury Manager — Corporate treasury across currencies via Plaid/Teller/bank APIs with cash flow forecasting and FX",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-treasury",
+  "homepage": "https://cortexprism.io/marketplace/plugins/treasury",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "treasury_get_balances",
+      "description": "Get account balances across currencies",
+      "params": []
+    },
+    {
+      "name": "treasury_forecast_cashflow",
+      "description": "Generate cash flow forecast",
+      "params": []
+    },
+    {
+      "name": "treasury_convert_currency",
+      "description": "Get FX rates and simulate conversions",
+      "params": []
+    },
+    {
+      "name": "treasury_initiate_transfer",
+      "description": "Initiate wire transfer with approval gate",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
